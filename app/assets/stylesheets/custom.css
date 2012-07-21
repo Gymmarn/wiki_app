@@ -76,17 +76,17 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-a.signup_button {
-  margin-left: auto;
+a.wiki_button {
+  margin-left: 470px;
   margin-right: auto;
   display: block;
   text-align: center;
-  width: 190px;
+  width: 150px;
   color: #fff;
-  background: #006400;
+  background: #CB2B2B;
   font-size: 150%;
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Round Corners */
