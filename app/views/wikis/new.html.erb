@@ -2,6 +2,7 @@
 <p>Use the field below to search Wikipedia for a topic of your choice.</p>
 
 <%= form_for(@wiki) do |f| %>
+  <%= render 'shared/error_messages' %>
   <div class="field">
     <%= f.label :name, "Topic" %><br />
     <%= f.text_field :name %>

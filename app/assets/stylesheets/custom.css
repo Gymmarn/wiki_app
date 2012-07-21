@@ -7,7 +7,8 @@ body {
 }
 
 header {
-  padding-top: 20px;
+  float: right;
+  padding-top: 10px;
 }
 
 header img {
@@ -20,9 +21,13 @@ section {
   font-size: 120%;
   padding: 20px;
   background: #fff;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 section h1 {
+  padding-top: 60px;
+
   font-size: 200%;
 }
 
@@ -163,6 +168,41 @@ aside {
   }
 }
 
-div.field, div.actions {
-  margin-bottom: 10px;
+/* Errors */
+
+#error_explanation {
+  align-text: center;
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
 }
+
+#error_explanation h2 {
+  align-text: center;
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  align-text: center;
+  color: "333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  align-text: center;
+  padding-top: 20px;
+  font-size: 12px;
+  list-style: square;
+}
+
+  

@@ -1,0 +1,13 @@
+<% if @wiki.errors.any? %>
+  <br /><br /><br />
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@wiki.errors.count, "error") %>
+    </h2>
+    <ul>
+    <%= @wiki.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

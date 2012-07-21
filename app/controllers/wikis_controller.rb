@@ -8,5 +8,15 @@ class WikisController < ApplicationController
   def new
     @wiki = Wiki.new
     @title = "Find a Wiki"
-  end  
+  end
+  
+  def create
+    @wiki = Wiki.new(params[:wiki])
+    if @wiki.save
+      # Handle a successful save
+    else 
+      @title = "Find a Wiki"
+      render 'new'
+    end
+  end
 end
