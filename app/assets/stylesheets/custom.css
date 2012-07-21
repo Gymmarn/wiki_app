@@ -162,3 +162,7 @@ aside {
     margin-bottom: 5px;
   }
 }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}

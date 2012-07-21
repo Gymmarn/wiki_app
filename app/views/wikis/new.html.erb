@@ -1,0 +1,13 @@
+<h1>Find a Wiki!</h1>
+<p>Use the field below to search Wikipedia for a topic of your choice.</p>
+
+<%= form_for(@wiki) do |f| %>
+  <div class="field">
+    <%= f.label :name, "Topic" %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Get it!" %>
+  </div>
+  
+<% end %>
