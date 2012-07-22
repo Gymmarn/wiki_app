@@ -1,0 +1,12 @@
+class CommentsController < ApplicationController
+
+  def create()
+    @wiki = Wiki.find(params[:id])
+    @comment = @wiki.comments.build(params[:comment])
+    if @comment.save
+      redirect_to @wiki, :flash => { :success => "Comment posted!" }
+    else
+      redirect to root_path
+    end
+  end
+end

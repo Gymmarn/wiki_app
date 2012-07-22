@@ -1,8 +1,8 @@
-<h1>Find a Wiki!</h1>
+<h1 class="up">Find a Wiki!</h1>
 <p>Use the field below to search Wikipedia for a topic of your choice.</p>
 
 <%= form_for(@wiki) do |f| %>
-  <%= render 'shared/error_messages' %>
+  <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
     <%= f.label :name, "Topic" %><br />
     <%= f.text_field :name %>

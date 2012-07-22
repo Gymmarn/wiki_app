@@ -2,6 +2,16 @@
   width: 710px;
 }
 
+section h1 {
+  font-size: 200%;
+}
+
+h1.up {
+  padding-top: 60px;
+  font-size: 200%;
+  text-align: center;
+}
+
 body {
   background: #EAEAEA;
 }
@@ -22,12 +32,6 @@ section {
   padding: 20px;
   background: #fff;
   padding-bottom: 50px;
-}
-
-section h1 {
-  padding-top: 60px;
-  text-align: center;
-  font-size: 200%;
 }
 
 /* link */
@@ -115,9 +119,15 @@ footer nav {
   float: none;
 }
 
-/* User show page */
+footer nav ul li {
+  padding-left: 20px;
+  padding-right 20px;
+}
 
-table.profile {
+
+/* Wiki page */
+
+table.wiki {
   width: 100%;
   margin-bottom: 0;
 }
@@ -133,6 +143,20 @@ td.sidebar {
   vertical-align: top;
   background: #ededed;
 }
+
+/* Pagination */
+
+div.pagination ul { 
+  list-style: none;
+}
+
+div.pagination ul li { 
+  float: left;
+  padding-right: 2px;
+  padding-left: 2px;
+
+}
+
 
 /* Comments */
 
@@ -212,7 +236,14 @@ form.new_comment textarea {
 #error_explanation ul li {
   padding-top: 20px;
   font-size: 12px;
-  list-style: square;
+  list-style: none;
 }
 
+ul.wikis {
+  margin-top: 1em;
+}
+
+ul.wikis li {
+  list-style: none;
+}
   
