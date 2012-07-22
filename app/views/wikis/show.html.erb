@@ -1,9 +1,12 @@
 <h1 class="wiki"><%= @wiki.name %></h1>
 <strong>Comments</strong> <%= @wiki.comments.count %> <br />
-<strong>Wikipedia</strong>  <%= link_to "URL", "http://en.wikipedia.org/wiki/#{@wiki.name.gsub!(' ','_')}", :target => '_blank' %><br />
+<strong>Wikipedia</strong> <%= link_to "URL", "http://en.wikipedia.org/wiki/#{@wiki.name.gsub!(' ','_')}", :target => '_blank' %><br />
+<strong>WikiWar started</strong> <%= time_ago_in_words(@wiki.created_at) %> ago.<br />
+
 <br />
 <p><%= @wiki.content %></p>
 <br />
+Leave a comment and let the WikiWar begin!<p class="comheader">(max 200 characters)</p>
 <%= render 'shared/comment_form' %>
 <% if @wiki.comments.any? %>
   <table class="comments" summary="Wiki comments">

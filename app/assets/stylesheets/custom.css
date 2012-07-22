@@ -34,6 +34,10 @@ section {
   padding-bottom: 50px;
 }
 
+p.comheader {
+  font-size: 60%;
+}
+
 /* link */
 
 a {
@@ -161,7 +165,7 @@ div.pagination ul li {
 /* Comments */
 
 h1.comment {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.2em;
 }
 
 

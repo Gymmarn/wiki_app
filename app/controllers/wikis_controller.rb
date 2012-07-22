@@ -1,5 +1,3 @@
-require 'nokogiri'
-
 class WikisController < ApplicationController
   
   def index
@@ -22,7 +20,6 @@ class WikisController < ApplicationController
   def create
     @wiki = Wiki.new(params[:wiki])
     if @wiki.save
-      # content = Nokogiri::HTML(RestClient.get("#{http://en.wikipedia.org/} #{wiki.name.underscore}"))   
       redirect_to @wiki
     else 
       @title = "Find a Wiki"
