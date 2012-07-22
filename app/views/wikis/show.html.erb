@@ -1,16 +1,22 @@
 <table class="wiki" summary="Wikipedia article">
   <tr>
     <td class="main">
-      <h1>
-        <%= @wiki.name %> 
-      </h1>
+      <h1><%= @wiki.name %></h1>
       <p><%= @wiki.content %></p>
     </td>
     <td class="sidebar round">
       <strong>Article</strong> <%= @wiki.name %><br />
-      <strong>Comments</strong> - <br />
+      <strong>Comments</strong> <%= @wiki.comments.count %> <br />
       <strong>Wikipedia</strong>  <%= link_to "URL", "http://en.wikipedia.org/wiki/#{@wiki.name.gsub!(' ','_')}" %><br />
     </td>
+  </tr>
+  <tr>
+    <% if @wiki.comments.any? %>
+      <table class="comments" summary="Wiki comments">
+        <%= render @comments %>
+      </table>
+      <%= will_paginate @comments %>
+    <% end %> 
   </tr>
 </table>
 

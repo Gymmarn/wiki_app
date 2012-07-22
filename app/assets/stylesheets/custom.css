@@ -130,36 +130,56 @@ td.main {
 td.sidebar {
   width: 30%;
   padding: 1em;
-  vertical-align: center;
+  vertical-align: top;
   background: #ededed;
 }
 
-/* microposts */
+/* Comments */
 
-.microposts {
-  list-style: none;
-  margin: 40px 0 0 0;
-  li {
-    padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
-  }
+h1.comment {
+  margin-bottom: 0.3em;
 }
-.content {
+
+
+table.comments {
+  margin-top: 1em;
+}
+
+table.comments tr {
+  height: 70px;
+}
+
+table.comments tr td.comment {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px:
+}
+
+table.comments tr td.comment span.timestamp {
   display: block;
+  font-size: 85%;
+  color: #666;
 }
-.timestamp {
-  color: $grayLight;
-  font-size: 70%;
+
+div.wiki_info a {
+  text-decoration: none;
 }
-.gravatar {
-  float: left;
-  margin-right: 10px;
+
+div.wiki_info span.wiki_name {
+  position: absolute;
 }
-aside {
-  textarea {
-    height: 100px;
-    margin-bottom: 5px;
-  }
+
+div.wiki_info span.comments {
+  font-size: 80%;
+}
+
+form.new_comment {
+  margin-bottom: 2em;
+}
+
+form.new_comment textarea {
+  height: 4em;
+  margin-bottom: 0;
 }
 
 /* Errors */

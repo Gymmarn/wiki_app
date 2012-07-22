@@ -2,8 +2,14 @@ require 'nokogiri'
 
 class WikisController < ApplicationController
   
+  def index
+    @wikis = Wiki.paginate(:page => params[:page])
+    @title = "All articles"
+  end
+  
   def show
     @wiki = Wiki.find(params[:id])
+    @comments = @wiki.comments.paginate(:page => params[:page])
     @title = @wiki.name
   end
   
