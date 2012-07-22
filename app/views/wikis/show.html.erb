@@ -1,2 +1,16 @@
-<h3><%= @wiki.name %></h3><br />
-<p><%= @wiki.content %></p>
+<table class="wiki" summary="Wikipedia article">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= @wiki.name %> 
+      </h1>
+      <p><%= @wiki.content %></p>
+    </td>
+    <td class="sidebar round">
+      <strong>Article</strong> <%= @wiki.name %><br />
+      <strong>Comments</strong> - <br />
+      <strong>Wikipedia</strong>  <%= link_to "URL", "http://en.wikipedia.org/wiki/#{@wiki.name.gsub!(' ','_')}" %><br />
+    </td>
+  </tr>
+</table>
+

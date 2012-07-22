@@ -116,6 +116,7 @@ DEPENDENCIES
   bootstrap-will_paginate
   factory_girl_rails (= 1.0)
   faker
+  nokogiri
   rails (= 3.2.6)
   rspec
   rspec-rails (= 2.11.0)

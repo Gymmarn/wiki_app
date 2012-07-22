@@ -4,6 +4,7 @@ gem 'rails', '3.2.6'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'faker'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'

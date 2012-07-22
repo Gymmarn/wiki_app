@@ -22,12 +22,11 @@ section {
   padding: 20px;
   background: #fff;
   padding-bottom: 50px;
-  text-align: center;
 }
 
 section h1 {
   padding-top: 60px;
-
+  text-align: center;
   font-size: 200%;
 }
 
@@ -131,13 +130,8 @@ td.main {
 td.sidebar {
   width: 30%;
   padding: 1em;
-  vertical-align: top;
-  background: #ffc;
-}
-
-.profile img.gravatar {
-  border: 1px solid #999;
-  margin-bottom: -10px;
+  vertical-align: center;
+  background: #ededed;
 }
 
 /* microposts */
@@ -171,7 +165,6 @@ aside {
 /* Errors */
 
 #error_explanation {
-  align-text: center;
   width: 400px;
   border: 2px solid red;
   padding: 7px;
@@ -181,7 +174,6 @@ aside {
 }
 
 #error_explanation h2 {
-  align-text: center;
   text-align: left;
   font-weight: bold;
   padding: 5px 5px 5px 15px;
@@ -192,14 +184,12 @@ aside {
 }
 
 #error_explanation p {
-  align-text: center;
   color: "333;
   margin-bottom: 0;
   padding: 5px;
 }
 
 #error_explanation ul li {
-  align-text: center;
   padding-top: 20px;
   font-size: 12px;
   list-style: square;
