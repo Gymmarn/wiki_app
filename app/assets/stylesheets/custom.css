@@ -34,7 +34,12 @@ section {
   padding-bottom: 50px;
 }
 
-p.comheader {
+span.comheader {
+  font-size: 80%;
+  text-decoration: bold;
+}
+
+p.comconds {
   font-size: 60%;
 }
 

@@ -5,9 +5,8 @@ WikiApp::Application.routes.draw do
 
   root :to => 'pages#home'
   
-  match '/about',       :to => 'pages#about'
-  match '/findwiki',    :to => 'wikis#new'
-  match '/comments',    :to => 'pages#about'
+  match '/about',        :to => 'pages#about'
+  match '/findwiki',     :to => 'wikis#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

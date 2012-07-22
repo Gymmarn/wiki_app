@@ -27,3 +27,4 @@ class WikisController < ApplicationController
     end
   end
 end
+
