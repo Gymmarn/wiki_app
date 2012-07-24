@@ -1,9 +1,13 @@
-<h1>All comments</h1>
+<h3 class="commindex">All comments for</h3>
+<h1><%= @wiki.name %></h1>
+<% if @wiki.comments.any? %>
+  <table class="comments" summary="Wiki comments">
+    <%= render @comments %>
+  </table>
+  <%= will_paginate @comments %>
+<% else %>
+  <p class="nothing">There is nothing here! Be the first to comment!</p> 
+  <p class="postconds">(In keeping with the spirit of the site, preferably something inflammatory)</p> 
+<% end %>
 
-<%= will_paginate %>
-<br />
-<ul class="comments">
-  <%= render @comments %>
-</ul>
-<%= will_paginate %>
 

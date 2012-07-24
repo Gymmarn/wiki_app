@@ -7,9 +7,13 @@ section h1 {
 }
 
 h1.up {
-  padding-top: 60px;
+  padding-top: 100px;
   font-size: 200%;
   text-align: center;
+}
+
+h3.commindex {
+  padding-top: 130px;
 }
 
 body {
@@ -18,7 +22,7 @@ body {
 
 header {
   float: right;
-  padding-top: 10px;
+  padding-top: 70px;
 }
 
 header img {
@@ -41,6 +45,20 @@ span.comheader {
 
 p.comconds {
   font-size: 60%;
+}
+
+p.postconds {
+  font-size: 60%;
+  text-align: center;
+}
+
+p.about {
+	margin-bottom: 100px;
+}
+
+p.nothing {
+	margin-top: 100px;
+    text-align: center;
 }
 
 /* link */
@@ -98,13 +116,21 @@ a.wiki_button {
   margin-right: auto;
   display: block;
   text-align: center;
-  width: 150px;
+  width: 250px;
+  font-size: 300%;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff;
+  color: #CB2B2B;
+}
+
+a.wiki_button:hover {
   color: #fff;
   background: #CB2B2B;
-  font-size: 150%;
-  font-weight: bold;
-  padding: 10px;
+  text-decoration: none;
 }
+
 
 /* Round Corners */
 
@@ -254,5 +280,9 @@ ul.wikis {
 
 ul.wikis li {
   list-style: none;
+}
+
+ul.wikis ul.index_list
+  float: left;
 }
   

@@ -8,6 +8,7 @@ class WikisController < ApplicationController
   def show
     @wiki = Wiki.find(params[:id])
     @comment = Comment.new
+    @comment.wiki_id = @wiki.id
     @comments = @wiki.comments.paginate(:page => params[:page])
     @title = @wiki.name
   end
